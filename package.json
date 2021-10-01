@@ -1,0 +1,29 @@
+{
+  "name": "codesketchtober",
+  "version": "1.0.0",
+  "description": "creative coding challenges for the month of october",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "server": "nodemon app.js",
+    "build": "webpack --watch --mode=development",
+    "start": "concurrently \"npm run server\" \"npm run build\""
+  },
+  "author": "csb324",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "p5": "^1.4.0",
+    "webpack": "^5.52.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "css-loader": "^6.3.0",
+    "nodemon": "^2.0.12",
+    "style-loader": "^3.3.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
